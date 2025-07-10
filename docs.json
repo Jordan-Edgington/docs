@@ -1,13 +1,17 @@
 {
 	"$schema": "https://mintlify.com/docs.json",
-	"theme": "mint",
+	"theme": "maple",
 	"name": "Proxybox Docs",
 	"colors": {
 		"primary": "#3B82F6",
 		"light": "#38BDF8",
 		"dark": "#1D4ED8"
 	},
-	"favicon": "/favicon.svg",
+	"api": {
+		"playground": {
+			"display": "simple"
+		}
+	},
 	"navigation": {
 		"tabs": [
 			{
@@ -15,7 +19,11 @@
 				"groups": [
 					{
 						"group": "Get Started",
-						"pages": ["index", "settings", "printers", "extensions", "shares"]
+						"pages": ["index", "admin"]
+					},
+					{
+						"group": "Modules",
+						"pages": ["settings", "printers", "extensions", "shares", "proxy"]
 					}
 				]
 			},
@@ -27,21 +35,16 @@
 						"pages": ["api-reference/introduction"]
 					},
 					{
-						"group": "Endpoint Examples",
-						"pages": [
-							"api-reference/endpoint/get",
-							"api-reference/endpoint/create",
-							"api-reference/endpoint/delete",
-							"api-reference/endpoint/webhook"
-						]
+						"group": "v1",
+						"pages": ["api-reference/endpoint/get"]
+					},
+					{
+						"group": "v2",
+						"pages": []
 					}
 				]
 			}
 		]
-	},
-	"logo": {
-		"light": "/logo/light.svg",
-		"dark": "/logo/dark.svg"
 	},
 	"navbar": {
 		"links": [
